@@ -8,6 +8,13 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+
+  <div *ngFor="let task of tasks" class="task-item">
+    <span [class.completed]="task.completed">{{ task.title }}</span>
+    <button (click)="toggleTaskStatus(task)">Alternar</button>
+    <button (click)="deleteTask(task.id)">Excluir</button>
+  </div>
+  
   <app-root></app-root>
 </body>
 </html>

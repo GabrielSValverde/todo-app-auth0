@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+/* task-list.component.css */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+  }
+  
